@@ -1,3 +1,4 @@
+ HEAD
 # 🤖 AI Intent Review v5.0
 
 ## 🚀 Setup
@@ -101,3 +102,6 @@ NODE_ENV=development
 # Optional GitHub token for real repo analysis:
 # GITHUB_TOKEN=ghp_yourtoken
 ```
+=======
+# AI-Intent-Review-Analysis-Auto-Sort-Lister
+ c2755440f134dc386837ad68b11a428efc740a09

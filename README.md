@@ -103,5 +103,70 @@ NODE_ENV=development
 # GITHUB_TOKEN=ghp_yourtoken
 ```
 =======
+
+
+FILE FOLDER STRUCTURE 
+
+
+backend/
+│
+├── server.js          ✅ Main entry point
+├── package.json
+├── seed.js            ✅ Demo data
+├── .env.example
+│
+├── controllers/
+│   └── aiEngine.js    🤖 AI logic (VERY IMPORTANT)
+│
+├── middleware/
+│   ├── auth.js
+│   └── upload.js
+│
+├── models/            🗄️ MongoDB schemas
+│   ├── Application.js
+│   ├── CandidateProfile.js
+│   ├── Job.js
+│   ├── Message.js
+│   └── User.js
+│
+├── routes/            🌐 APIs
+│   ├── applications.js
+│   ├── auth.js
+│   ├── candidate.js
+│   ├── hr.js
+│   ├── jobs.js
+│   ├── messages.js
+│   └── user.js
+
+
+
+frontend/
+│
+├── package.json
+├── public/index.html
+│
+└── src/
+    ├── App.js
+    ├── index.js
+    │
+    ├── components/
+    │   ├── Navbar.js
+    │   └── ScoreRing.js
+    │
+    ├── context/
+    │   └── AuthContext.js
+    │
+    └── pages/
+        ├── HRDashboard.js
+        ├── JobStatus.js
+        ├── Inbox.js
+        ├── CandidateInbox.js
+        ├── CandidateDash.js
+        ├── ApplyForm.js
+        ├── Login.js
+        ├── Register.js
+        └── ...
+
+
 # AI-Intent-Review-Analysis-Auto-Sort-Lister
  c2755440f134dc386837ad68b11a428efc740a09

@@ -97,7 +97,7 @@ export default function Inbox(){
                     <div style={{display:'flex',gap:'.65rem',alignItems:'flex-start'}}>
                       {/* Avatar */}
                       {t.candidate?.avatar
-                        ?<img src={'http://localhost:5000'+t.candidate.avatar} alt="" style={{width:36,height:36,borderRadius:'50%',objectFit:'cover',flexShrink:0}}/>
+                        ?<img src={process.env.REACT_APP_API_URL +t.candidate.avatar} alt="" style={{width:36,height:36,borderRadius:'50%',objectFit:'cover',flexShrink:0}}/>
                         :<div style={{width:36,height:36,borderRadius:'50%',background:'linear-gradient(135deg,#3b82f6,#6366f1)',display:'flex',alignItems:'center',justifyContent:'center',fontWeight:800,fontSize:'.9rem',color:'#fff',flexShrink:0}}>
                           {t.fullName?.[0]?.toUpperCase()||'?'}
                         </div>

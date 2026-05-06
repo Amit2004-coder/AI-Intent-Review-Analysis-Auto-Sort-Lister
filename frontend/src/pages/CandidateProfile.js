@@ -4,7 +4,7 @@ import axios from 'axios';
 import {toast} from 'react-toastify';
 import {useAuth} from '../context/AuthContext';
 
-const API='http://localhost:5000';
+const API = process.env.REACT_APP_API_URL;
 const ALL_SKILLS=['React','Node.js','Python','JavaScript','TypeScript','MongoDB','SQL','AWS','Docker','Java','Flutter','Next.js','Vue.js','ML/AI','Data Science','DevOps','Go','PHP','Angular','C++','Swift','Kotlin','Figma'];
 
 export default function CandidateProfile(){

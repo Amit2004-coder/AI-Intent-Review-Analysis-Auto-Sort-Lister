@@ -2,7 +2,7 @@ import React,{createContext,useContext,useState,useEffect,useCallback} from 'rea
 import axios from 'axios';
 
 const Ctx = createContext();
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = process.env.REACT_APP_API_URL;
 
 export function AuthProvider({children}){
   const [hrUser, setHrUser]         = useState(null);

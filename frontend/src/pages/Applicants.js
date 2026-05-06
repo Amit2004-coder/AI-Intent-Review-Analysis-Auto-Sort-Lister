@@ -4,7 +4,7 @@ import axios from 'axios';
 import {toast} from 'react-toastify';
 import ScoreRing from '../components/ScoreRing';
 
-const API='http://localhost:5000';
+const API = process.env.REACT_APP_API_URL;
 const STATI=['screening','shortlisted','interview','offered','rejected'];
 const SC={screening:'#7b8fc3',shortlisted:'#22c55e',interview:'#06b6d4',offered:'#eab308',rejected:'#ef4444'};
 

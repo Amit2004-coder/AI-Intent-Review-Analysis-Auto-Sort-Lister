@@ -5,7 +5,7 @@ import {useAuth} from '../context/AuthContext';
 import ScoreRing from '../components/ScoreRing';
 import {formatDistanceToNow} from 'date-fns';
 
-const API='http://localhost:5000';
+const API = process.env.REACT_APP_API_URL;
 
 // Status shown to candidate (friendly labels — no AI scores)
 const statusLabel = s => ({

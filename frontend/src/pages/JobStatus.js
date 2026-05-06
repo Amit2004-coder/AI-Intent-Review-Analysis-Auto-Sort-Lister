@@ -6,7 +6,7 @@ import ScoreRing from '../components/ScoreRing';
 
 const STATI = ['screening', 'shortlisted', 'interview', 'offered', 'rejected'];
 const SC = { screening: '#7b8fc3', shortlisted: '#22c55e', interview: '#06b6d4', offered: '#eab308', rejected: '#ef4444', applied: '#4a5a7a' };
-const API = 'http://localhost:5000';
+const API = process.env.REACT_APP_API_URL;
 
 export default function JobStatus() {
   const { jobId } = useParams();

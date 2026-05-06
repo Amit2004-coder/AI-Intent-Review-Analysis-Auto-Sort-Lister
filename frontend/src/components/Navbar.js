@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
-const API = 'http://localhost:5000';
+const API = process.env.REACT_APP_API_URL;
 
 export default function Navbar() {
   const { hrUser, candidate, authMode, logout } = useAuth();
